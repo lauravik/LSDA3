@@ -1,4 +1,8 @@
-pip install influxdb
+import subprocess
+import sys
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+install(influxdb)
 from influxdb import InfluxDBClient 
 import pandas as pd
 from sklearn.pipeline import Pipeline

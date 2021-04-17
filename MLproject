@@ -3,7 +3,7 @@ name: Assignment_3
 conda_env: conda.yaml
 
 entry_points:
-	main:
-		parameters:
-			days: {type:int, default: 90}
-		command: "python3 assignment3.py {days}"
+  main:
+    parameters:
+      days: {type:int, default: 90}
+    command: "python3 assignment3.py {days}"

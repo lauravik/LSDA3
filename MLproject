@@ -1,4 +1,4 @@
-name: Assignment_3
+name: Assignment3
 
 conda_env: conda.yaml
 

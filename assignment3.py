@@ -1,4 +1,4 @@
-#pip install influxdb
+pip install influxdb
 from influxdb import InfluxDBClient 
 import pandas as pd
 from sklearn.pipeline import Pipeline

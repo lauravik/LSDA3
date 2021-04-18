@@ -34,7 +34,7 @@ client.switch_database('orkney')
 # ----------------------------------------------------------------------
 
 # Get the last 90 days of power generation data
-days = 90
+days = int(sys.argv[1]) if len(sys.argv) > 1 else 90
 sql_query = f"SELECT * FROM Generation where time > now()-{days}d"
 generation = client.query(sql_query)
 gen_df = get_df(generation)

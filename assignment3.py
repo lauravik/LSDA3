@@ -17,7 +17,9 @@ from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.neural_network import MLPRegressor
 import pickle
-#mlflow.set_tracking_uri("https://20.67.200.110:5000")
+
+#mlflow.set_tracking_uri("http://training.itu.dk:5000/")
+#mlflow.set_experiment('lmaa')
 #tracking_uri = mlflow.get_tracking_uri()
 
 # Function to convert database data to dataframe

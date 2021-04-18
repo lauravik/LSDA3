@@ -17,6 +17,8 @@ from sklearn.linear_model import LinearRegression
 from sklearn.tree import DecisionTreeRegressor
 from sklearn.neural_network import MLPRegressor
 import pickle
+mlflow.set_tracking_uri("https://20.67.200.110:5000")
+tracking_uri = mlflow.get_tracking_uri()
 
 # Function to convert database data to dataframe
 def get_df(results):
@@ -98,7 +100,8 @@ for degree in range(1,6):
 
         # Logging final model
         if degree == 5:
-       		mlflow.sklearn.log_model(model, 'model')
+       		mlflow.sklearn.save_model('model', python_model = model, conda_env = 'conda.yaml')
+
 
       
 

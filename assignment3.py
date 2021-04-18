@@ -97,13 +97,13 @@ for degree in range(1,6):
         # Logging parameters
         mlflow.log_param('degree', degree)
         mlflow.log_param('days', days)
-	
-	# Logging models
-	mlflow.sklearn.log_model(model, 'model')
-	
-	# Saving final model
-	if degree == 5:
-		mlflow.sklearn.save_model(sk_model = model, path = 'model', conda_env = 'conda.yaml')
+
+        # Logging models
+        mlflow.sklearn.log_model(model, 'model')
+
+        # Saving final model
+        if degree == 5:
+            mlflow.sklearn.save_model(sk_model = model, path = 'model', conda_env = 'conda.yaml')
 	
 
 

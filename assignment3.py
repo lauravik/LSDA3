@@ -99,7 +99,7 @@ for degree in range(1,6):
         mlflow.log_param('days', days)
 
 	# Logging models
-	mlflow.sklearn.log_model('model', model)
+	mlflow.sklearn.log_model(model, 'model')
 
         # Saving final model
         if degree == 5:

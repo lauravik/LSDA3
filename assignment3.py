@@ -100,7 +100,7 @@ for degree in range(1,6):
 
         # Logging final model
         if degree == 5:
-       		mlflow.sklearn.save_model('model', python_model = model, conda_env = 'conda.yaml')
+       		mlflow.sklearn.save_model('model', sk_model = model, conda_env = 'conda.yaml')
 
 
       
